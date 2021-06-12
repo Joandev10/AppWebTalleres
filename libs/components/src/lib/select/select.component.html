@@ -1,0 +1,3 @@
+<select class="form-control" formControlName="id" id="instructor">
+    <option *ngFor="let instructor of instructors" [value]="instructor.id">{{ instructor.name }}</option>
+</select>

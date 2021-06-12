@@ -1,0 +1,19 @@
+<div class="row my-4 animate__animated animate__fadeIn">
+    <div class="col" *ngIf="workshop">
+        <glx-button color="link" routerLink="/talleres"> <glx-icon name="ArrowLeft"></glx-icon>Volver </glx-button>
+
+        <img class="card-img-top mt-3" [src]="workshop[0].image | imagePath" alt="Card image cap" />
+        <h2 class="my-4">{{workshop[0].name}}</h2>
+        <p class="description">{{workshop[0].description}}</p>
+
+        <p class="card-text"><glx-icon name="Person"></glx-icon>Instructor <b>{{workshop[0].instructor.name}}</b></p>
+        <p class="card-text"><glx-icon name="Calendar"></glx-icon> Dia {{workshop[0].date | date:'dd/MM/yyyy'}}</p>
+        <p class="card-text"><glx-icon name="Alarm"></glx-icon> Hora {{workshop[0].time}} hrs</p>
+        <div class="wrapper-btn">
+            <glx-button color="primary" type="outline" class="mr-3"
+                ><glx-icon name="Download"></glx-icon> Descargar temario
+            </glx-button>
+            <glx-button color="primary"><glx-icon name="Clipboard"></glx-icon> Inscribirme </glx-button>
+        </div>
+    </div>
+</div>

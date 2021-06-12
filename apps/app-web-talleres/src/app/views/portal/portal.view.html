@@ -1,0 +1,27 @@
+<glx-header>
+    <div class="container d-flex justify-content-between">
+        <a class="navbar-brand" routerLink="/">App Galaxy</a>
+        <glx-button color="primary" routerLink="/account/iniciar-sesion">
+            <glx-icon name="PeopleCircle"></glx-icon>
+            Iniciar Sesion
+        </glx-button>
+    </div>
+</glx-header>
+<main class="container">
+    <router-outlet></router-outlet>
+</main>
+<glx-footer>
+    <div class="container pt-4">
+        <p class="text-white">App galaxy</p>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-3 col-lg-6">
+                <glx-button color="link">Terminos y condiciones</glx-button>
+            </div>
+            <div class="col-12 col-sm-12 col-md-3 col-lg-2"><glx-button color="link">Talleres</glx-button></div>
+            <div class="col-12 col-sm-12 col-md-3 col-lg-2">
+                <glx-button color="link">Preguntas frecuentes</glx-button>
+            </div>
+            <div class="col-12 col-sm-12 col-md-3 col-lg-2"><glx-button color="link">Contactenos</glx-button></div>
+        </div>
+    </div>
+</glx-footer>

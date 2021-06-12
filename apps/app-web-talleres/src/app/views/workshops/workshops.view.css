@@ -1,0 +1,34 @@
+/*.tarjeta {
+    background-color: chartreuse;
+    color: darkblue;
+}*/
+img {
+    height: 170px;
+}
+
+.wrapper-btn {
+    display: flex;
+}
+
+@media (max-width: 731px) {
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 17px;
+    }
+    glx-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    glx-card {
+        width: 100%;
+    }
+}
+@media (min-width: 1280px) {
+    glx-card {
+        width: 100%;
+    }
+}

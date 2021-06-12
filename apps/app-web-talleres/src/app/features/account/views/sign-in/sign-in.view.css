@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:host {
+    height: 100%;
+}
+:host .wrapper-row {
+    height: 100%;
+}
+
+:host .wrapper-fondo {
+    background-image: url('./../../../../../assets/img/background-signin.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+:host .wrapper-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    padding: 0;
+}
+
+:host .wrapper-signin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+}
+
+:host form {
+    width: 100%;
+}
+
+:host .wrapper-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+    :host {
+        height: 100%;
+    }
+    :host .wrapper-row {
+        position: relative;
+        height: 100%;
+    }
+
+    :host .wrapper-fondo {
+        height: 100%;
+    }
+    :host .wrapper-fondo:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.7);
+    }
+    :host .wrapper-form {
+        position: absolute;
+        height: 100%;
+    }
+    :host .title {
+        color: white;
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 731px) {
+    :host .wrapper-signin {
+        width: 70%;
+    }
+    :host .title {
+        color: white;
+        font-size: 30px;
+    }
+}

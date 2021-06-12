@@ -1,0 +1,272 @@
+{
+  "workshops": [
+    {
+      "id": 1,
+      "name": "Componente de Navegación en Android Jetpack",
+      "description": "El componente de navegación de Android Jetpack nos ayuda a implementar la navegación, desde simples clics en botones hasta patrones más complejos.",
+      "date": "2021-06-11",
+      "time": "19:00",
+      "image": "android.png",
+      "slug": "android",
+      "instructor": {
+        "id": 1,
+        "name": "Julio Ortiz Campos"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Cultura y Prácticas de DevOps",
+      "description": "DevOps permite que los roles que antes estaban aislados (desarrollo, operaciones de TI, ingeniería de la calidad y seguridad) se coordinen y colaboren para producir productos confiables y de calidad. Al adoptar una cultura de DevOps junto con prácticas y herramientas de DevOps, los equipos adquieren la capacidad de responder mejor a las necesidades de los clientes, aumentar la confianza en las aplicaciones que crean y alcanzar los objetivos empresariales en menos tiempo. En este contexto una herramienta como Jenkins, juega un rol muy importante ya que permite a los desarrolladores construir, probar e implementar y cumplir con dicho objetivo.",
+      "date": "2021-06-11",
+      "time": "20:00",
+      "image": "devops.png",
+      "slug": "devops",
+      "instructor": {
+        "id": 2,
+        "name": "Carmen Salvador Lopez"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Optimizando operaciones usando tablas particionadas",
+      "description": "Las tablas particionadas son objetos de base de datos SQL Server que son usados en grandes almacenes de datos como el data warehouse. Sin embargo, también pueden ser usadas en bases de datos con alto volumen de transacciones (DML). Para su uso se requiere de algunas consideraciones a tomar en cuenta a fin de poder distribuir correctamente los datos dentro de ella. En el presente taller trabajaremos con tablas particionadas y veremos como aplicarlas en nuestra base de datos.",
+      "date": "2021-06-30",
+      "time": "21:00",
+      "image": "sql-server.png",
+      "slug": "sql-tablas",
+      "instructor": {
+        "id": 1,
+        "name": "Julio Ortiz Campos"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Angular Interceptores",
+      "description": "En este taller aprenderemos algunas utilidades que se les puede dar a los Interceptores en Angular como agregar una URL base, cabeceras globales hasta un manejador global de errores utilizando RxJS.",
+      "date": "2021-06-25",
+      "time": "19:00",
+      "image": "angular-interceptores.png",
+      "slug": "angular-interceptores",
+      "instructor": {
+        "id": 2,
+        "name": "Carmen Salvador Lopez"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Angular Http",
+      "description": "En este taller aprenderemos cómo consumir Http correctamente empleando clases e interfaces para ordenar, validar y parsear información del servidor utilizando RxJS.",
+      "date": "2021-06-11",
+      "time": "19:00",
+      "image": "angular-http.png",
+      "slug": "angular-http",
+      "instructor": {
+        "id": 1,
+        "name": "Julio Ortiz Campos"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Automatización de pruebas en aplicaciones web con Selenium",
+      "description": "Selenium WebDriver es una herramienta que te permite automatizar diferentes tipos de pruebas: Integración, Regresión y Aceptacion en aplicaciones web.",
+      "date": "2021-06-29",
+      "time": "19:00",
+      "image": "selenium1.png",
+      "slug": "selenium1",
+      "instructor": {
+        "id": 3,
+        "name": "Julio Sandoval Urbina"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Aplicaciones Web con Spring Security",
+      "description": "Implementa el proceso de autenticación y utilización en aplicaciones web con Spring Security, se desarrollará un caso práctico.",
+      "date": "2021-06-14",
+      "time": "20:00",
+      "image": "spring-security.png",
+      "slug": "spring-security",
+      "instructor": {
+        "id": 1,
+        "name": "Julio Ortiz Campos"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Integridad de Datos con Constraints y triggers",
+      "description": "Integridad de datos significa que los datos de una base de datos se adhieren a las reglas de negocio y en oracle existen formas de mantenerla. En este taller veremos cómo trabajar con dos de ellas: Constraints y triggers. Veremos todo lo que se puede hacer con ambas y lo que Oracle recomienda para cada una. Haremos demo que nos ayudarán a comprender cuál aplicar, en qué situación y cuándo no.",
+      "date": "2021-06-15",
+      "time": "20:00",
+      "image": "oracle1.png",
+      "slug": "constraints-triggers",
+      "instructor": {
+        "id": 2,
+        "name": "Carmen Salvador Lopez"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Gestión de Infraestructura y redes con EC2 y VPC",
+      "description": "Configura y crea instancias con EC2 considerando reglas de grupos de seguridad, creación de red personalizada con VPC para lanzar recursos de AWS en una red virtual aislada de forma lógica.",
+      "date": "2021-06-15",
+      "time": "19:00",
+      "image": "aws1.png",
+      "slug": "aws1",
+      "instructor": {
+        "id": 1,
+        "name": "Julio Ortiz Campos"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Integrando Spring Data y Store Procedures con Oracle",
+      "description": "Implementa la capa Repository para invocar procedimientos almacenados y gestionar lógica de negocio a nivel de base de datos relacionales.",
+      "date": "2021-06-12",
+      "time": "21:00",
+      "image": "spring-data.png",
+      "slug": "spring-data",
+      "instructor": {
+        "id": 1,
+        "name": "Julio Ortiz Campos"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Generando reportes con 'Extend Reports'",
+      "description": "El siguiente paso después de la ejecución de las pruebas, es la generación de reportes paso a paso, con evidencias como capturas de pantallas (screenshots) por cada estado de las pruebas ejecutadas, esto permite dar visibilidad a todos los involucrados en el SDLC (Stakeholders, Development y DevSecOps team).",
+      "date": "2021-06-15",
+      "time": "20:00",
+      "image": "selenium2.png",
+      "slug": "selenium-report",
+      "instructor": {
+        "id": 3,
+        "name": "Julio Sandoval Urbina"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Simplificación de tareas de administración en Oracle 12c, 18c y 19c",
+      "description": "Homologar la base de datos desarrollo o test con la data de producción ya sea para pruebas del ciclo de desarrollo de aplicaciones, para instalación de un parche o fix, para reproducir el error a fin de continuar con la atención de un service request de oracle, o finalmente, para hacer pruebas de upgrade; son algunas de las tareas que se solicitan periódicamente y que demandaban tiempo considerable antes de la llegada de la versión 12c En el presente taller Veremos alguna de estas y otras operaciones se pueden realizar con las bases de datos de la versión 12c en adelante gracias a la gran versatilidad en las operaciones que reducen sobremanera el tiempo y el riesgo a cometer errores.",
+      "date": "2021-06-12",
+      "time": "19:00",
+      "image": "oracle2.png",
+      "slug": "oracle2",
+      "instructor": {
+        "id": 1,
+        "name": "Julio Ortiz Campos"
+      }
+    },
+    {
+      "id": 13,
+      "name": "Aplicaciones Web con Spring Boot y Thymeleaf",
+      "description": "Thymeleaf es el template recomendado por Pivotal para el desarrollo de aplicaciones web. En este taller aprende cómo integrar Spring MVC, Thymeleaf , Bootstrap y otras tecnologías relacionadas.",
+      "date": "2021-06-13",
+      "time": "21:00",
+      "image": "spring-thymeleaf.png",
+      "slug": "thymeleaf",
+      "instructor": {
+        "id": 2,
+        "name": "Carmen Salvador Lopez"
+      }
+    },
+    {
+      "id": 14,
+      "name": "Gestión de Identidad y Accesos y creación de Buckets con IAM y S3",
+      "description": "Diseño y creación de cuentas de usuarios, y accesos con IAM considerando la implementación de políticas, creación de buckets para objetos y sitios web con S3 considerando la gestión de restricciones.",
+      "date": "2021-06-14",
+      "time": "19:00",
+      "image": "aws2.png",
+      "slug": "aws2",
+      "instructor": {
+        "id": 3,
+        "name": "Julio Sandoval Urbina"
+      }
+    },
+    {
+      "id": 15,
+      "name": "Desarrollo de Arquitecturas con Java Core",
+      "description": "Diseño conceptual e implementación de arquitectura de aplicaciones con Java Core considerando la implementación de las principales capas de persistencia, servicio, presentación, entidades, VO,DTO, gestión de errores y excepciones.",
+      "date": "2021-06-15",
+      "time": "21:00",
+      "image": "java-core.png",
+      "slug": "java-core",
+      "instructor": {
+        "id": 1,
+        "name": "Julio Ortiz Campos"
+      }
+    },
+    {
+      "id": 16,
+      "name": "Programación Funcional en Java",
+      "description": "¿Sabías que la programación funcional es parte de un nuevo paradigma de programación? Conoce las ventajas que ofrece en relación a la programación orientada a objetos y cómo implementarlo de manera práctica y sencilla en Java.",
+      "date": "2021-06-17",
+      "time": "19:00",
+      "image": "java-funcional.png",
+      "slug": "java-funcional",
+      "instructor": {
+        "id": 1,
+        "name": "Julio Ortiz Campos"
+      }
+    },
+    {
+      "id": 17,
+      "name": "Angular 11: Personalización de Formularios Reactivos",
+      "description": "En este taller aprenderemos a crear controles y validaciones personalizadas en formularios reactivos.",
+      "date": "2021-06-26",
+      "time": "20:00",
+      "image": "angular-reactive-forms.png",
+      "slug": "angular-reactive-forms",
+      "instructor": {
+        "id": 3,
+        "name": "Julio Sandoval Urbina"
+      }
+    },
+    {
+      "id": 18,
+      "name": "Automatización de Pruebas Funcionales y Regresión con selenium WebDriver",
+      "description": "En la actualidad tanto las pruebas funcionales y las pruebas de regresión puede ser desarrolladas de manera manual, sin embargo la mejor manera, es diseñar y construir scripts de pruebas que puedan ejecutarse de manera automática y esto trae muchos beneficios en el SDLC (Software Development Life Cycle).",
+      "date": "2021-06-22",
+      "time": "19:00",
+      "image": "selenium3.png",
+      "slug": "selenium3",
+      "instructor": {
+        "id": 1,
+        "name": "Julio Ortiz Campos"
+      }
+    },
+    {
+      "id": 19,
+      "name": "Manejo de archivos con Oracle PL-SQL",
+      "description": "El lenguaje de programación de la base de datos Oracle te permite hacer muchas acciones entre las cuales también se encuentra el trabajar con diferentes tipos de archivos a fin de cargar sus datos o leerlos para consultar la información. En el presente taller aprenderás a trabajar con paquetes para el trabajo con archivos y así poder controlar este tipo de objetos en tu base de datos. El desarrollo del taller será 100% práctico con una ligera introducción teórica y asesoría del instructor.",
+      "date": "2021-06-27",
+      "time": "20:00",
+      "image": "oracle3.png",
+      "slug": "oracle3",
+      "instructor": {
+        "id": 2,
+        "name": "Carmen Salvador Lopez"
+      }
+    }
+  ],
+  "instructors": [
+    {
+      "id": 1,
+      "name": "Julio Ortiz Campos"
+    },
+    {
+      "id": 2,
+      "name": "Carmen Salvador Lopez"
+    },
+    {
+      "id": 3,
+      "name": "Julio Sandoval Urbina"
+    }
+  ],
+  "users": [
+    {
+      "email": "jpuma@gmail.com",
+      "password": "$2a$10$R9PacaUYEUKOf3gJdffmseHlmbjkDGlHIXhRSlxFxtZ6BqcryI8sm",
+      "id": 1
+    }
+  ]
+}

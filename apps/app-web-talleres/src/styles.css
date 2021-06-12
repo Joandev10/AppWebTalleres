@@ -1,0 +1,18 @@
+@import './../../../libs/components/src/assets/bootstrap.min.css';
+@import './../../../libs/components/src/assets/icons.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1180px;
+    }
+}
+
+.btn-link:hover {
+    text-decoration: none;
+}

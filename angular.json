@@ -1,7 +1,147 @@
 {
-  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1,
-  "newProjectRoot": "projects",
-  "projects": {
-  }
+    "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+    "version": 1,
+    "newProjectRoot": "apps",
+    "projects": {
+        "app-web-talleres": {
+            "projectType": "application",
+            "schematics": {},
+            "root": "apps/app-web-talleres",
+            "sourceRoot": "apps/app-web-talleres/src",
+            "prefix": "app",
+            "architect": {
+                "build": {
+                    "builder": "@angular-devkit/build-angular:browser",
+                    "options": {
+                        "outputPath": "dist/app-web-talleres",
+                        "index": "apps/app-web-talleres/src/index.html",
+                        "main": "apps/app-web-talleres/src/main.ts",
+                        "polyfills": "apps/app-web-talleres/src/polyfills.ts",
+                        "tsConfig": "apps/app-web-talleres/tsconfig.app.json",
+                        "aot": true,
+                        "assets": ["apps/app-web-talleres/src/favicon.ico", "apps/app-web-talleres/src/assets"],
+                        "styles": ["apps/app-web-talleres/src/styles.css", "node_modules/animate.css/animate.css"],
+                        "scripts": []
+                    },
+                    "configurations": {
+                        "production": {
+                            "fileReplacements": [
+                                {
+                                    "replace": "apps/app-web-talleres/src/environments/environment.ts",
+                                    "with": "apps/app-web-talleres/src/environments/environment.prod.ts"
+                                }
+                            ],
+                            "optimization": true,
+                            "outputHashing": "all",
+                            "sourceMap": false,
+                            "namedChunks": false,
+                            "extractLicenses": true,
+                            "vendorChunk": false,
+                            "buildOptimizer": true,
+                            "budgets": [
+                                {
+                                    "type": "initial",
+                                    "maximumWarning": "2mb",
+                                    "maximumError": "5mb"
+                                },
+                                {
+                                    "type": "anyComponentStyle",
+                                    "maximumWarning": "6kb",
+                                    "maximumError": "10kb"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "serve": {
+                    "builder": "@angular-devkit/build-angular:dev-server",
+                    "options": {
+                        "browserTarget": "app-web-talleres:build"
+                    },
+                    "configurations": {
+                        "production": {
+                            "browserTarget": "app-web-talleres:build:production"
+                        }
+                    }
+                },
+                "extract-i18n": {
+                    "builder": "@angular-devkit/build-angular:extract-i18n",
+                    "options": {
+                        "browserTarget": "app-web-talleres:build"
+                    }
+                },
+                "test": {
+                    "builder": "@angular-devkit/build-angular:karma",
+                    "options": {
+                        "main": "apps/app-web-talleres/src/test.ts",
+                        "polyfills": "apps/app-web-talleres/src/polyfills.ts",
+                        "tsConfig": "apps/app-web-talleres/tsconfig.spec.json",
+                        "karmaConfig": "apps/app-web-talleres/karma.conf.js",
+                        "assets": ["apps/app-web-talleres/src/favicon.ico", "apps/app-web-talleres/src/assets"],
+                        "styles": ["apps/app-web-talleres/src/styles.css"],
+                        "scripts": []
+                    }
+                },
+                "lint": {
+                    "builder": "@angular-devkit/build-angular:tslint",
+                    "options": {
+                        "tsConfig": [
+                            "apps/app-web-talleres/tsconfig.app.json",
+                            "apps/app-web-talleres/tsconfig.spec.json",
+                            "apps/app-web-talleres/e2e/tsconfig.json"
+                        ],
+                        "exclude": ["**/node_modules/**"]
+                    }
+                },
+                "e2e": {
+                    "builder": "@angular-devkit/build-angular:protractor",
+                    "options": {
+                        "protractorConfig": "apps/app-web-talleres/e2e/protractor.conf.js",
+                        "devServerTarget": "app-web-talleres:serve"
+                    },
+                    "configurations": {
+                        "production": {
+                            "devServerTarget": "app-web-talleres:serve:production"
+                        }
+                    }
+                }
+            }
+        },
+        "components": {
+            "projectType": "library",
+            "root": "libs/components",
+            "sourceRoot": "libs/components/src",
+            "prefix": "glx",
+            "architect": {
+                "build": {
+                    "builder": "@angular-devkit/build-angular:ng-packagr",
+                    "options": {
+                        "tsConfig": "libs/components/tsconfig.lib.json",
+                        "project": "libs/components/ng-package.json"
+                    },
+                    "configurations": {
+                        "production": {
+                            "tsConfig": "libs/components/tsconfig.lib.prod.json"
+                        }
+                    }
+                },
+                "test": {
+                    "builder": "@angular-devkit/build-angular:karma",
+                    "options": {
+                        "main": "libs/components/src/test.ts",
+                        "tsConfig": "libs/components/tsconfig.spec.json",
+                        "karmaConfig": "libs/components/karma.conf.js"
+                    }
+                },
+                "lint": {
+                    "builder": "@angular-devkit/build-angular:tslint",
+                    "options": {
+                        "tsConfig": ["libs/components/tsconfig.lib.json", "libs/components/tsconfig.spec.json"],
+                        "exclude": ["**/node_modules/**"]
+                    }
+                }
+            }
+        }
+    },
+    "defaultProject": "app-web-talleres"
 }

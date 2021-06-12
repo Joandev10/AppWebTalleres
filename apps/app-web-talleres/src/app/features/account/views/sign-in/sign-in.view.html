@@ -1,0 +1,46 @@
+<div class="row wrapper-row">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-8 wrapper-fondo animate__animated animate__fadeIn"></div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-4 wrapper-form pt-3">
+        <glx-button class="btn-back" color="link" routerLink="/talleres"
+            ><glx-icon name="ArrowLeft"></glx-icon> Volver
+        </glx-button>
+        <div class="wrapper-signin">
+            <h3 class="title mb-4">Iniciar Sesion</h3>
+            <form [formGroup]="formLogin" (ngSubmit)="signIn()" autocomplete="off">
+                <div class="form-group mb-2">
+                    <label for="email">Email</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        [class.is-invalid]="emailControl.invalid && (emailControl.touched || emailControl.dirty)"
+                        formControlName="email"
+                        id="email"
+                    />
+                    <small *ngIf="false" id="emailHelp" class="form-text text-muted"
+                        >We'll never share your email with anyone else.</small
+                    >
+                </div>
+                <div class="form-group mb-2">
+                    <label for="password">Clave</label>
+                    <input
+                        type="password"
+                        class="form-control"
+                        [class.is-invalid]="passwordControl.invalid && (passwordControl.touched || passwordControl.dirty)"
+                        formControlName="password"
+                        id="password"
+                    />
+                    <small *ngIf="false" id="emailHelp" class="form-text text-muted"
+                        >We'll never share your email with anyone else.</small
+                    >
+                </div>
+                <div class="row my-4">
+                    <div class="col wrapper-btn">
+                        <button type="button" class="btn btn-link" routerLink="../recovery">Olvide clave</button>
+                        <button type="button" class="btn btn-link" routerLink="../registrar">Registrarme</button>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block" [disabled]="formLogin.invalid">Ingresar</button>
+            </form>
+        </div>
+    </div>
+</div>

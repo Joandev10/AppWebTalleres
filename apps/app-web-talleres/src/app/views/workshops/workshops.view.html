@@ -1,0 +1,53 @@
+<h1 class="mt-5 mb-4">Listado de talleres</h1>
+
+<form [formGroup]="formWorkshop" autocomplete="off" class="mb-5">
+    <div class="form-row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+            <label for="name">Nombre</label>
+            <input type="text" formControlName="name" class="form-control" id="name" placeholder="Angular" />
+        </div>
+        <div formGroupName="instructor" class="col-12 col-sm-12 col-md-6 col-lg-3">
+            <label for="instructor">Instructor</label>
+            <select class="form-control" formControlName="id" id="instructor">
+                <option *ngFor="let instructor of instructors" [value]="instructor.id">{{instructor.name}}</option>
+            </select>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+            <label for="fechaInicio">Fecha Inicio</label>
+            <input type="text" class="form-control" formControlName="start" id="fechaInicio" placeholder="dd/MM/yyyy" />
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+            <label for="fechaFin">Fecha Fin</label>
+            <input type="text" class="form-control" formControlName="end" id="fechaFin" placeholder="dd/MM/yyyy" />
+        </div>
+    </div>
+</form>
+
+<div class="row mb-4">
+    <div class="col wrapper-btn">
+        <glx-button color="primary" class="mr-3" (click)="getWorkshopsNow()"> Hoy </glx-button>
+        <glx-button color="primary" class="mr-3" (click)="getWorkshopsWeek()"> Esta semana </glx-button>
+        <glx-button color="primary" (click)="getWorkshopsMonth()"> Este mes </glx-button>
+    </div>
+</div>
+
+<div class="row animate__animated animate__fadeIn">
+    <div class="col-12 col-sm-12 col-md-6 col-lg-3 my-3 tarjeta" *ngFor="let workshop of workshops">
+        <glx-card>
+            <img class="card-img-top" [src]="workshop.image | imagePath" alt="Card image cap" />
+            <glx-card-boby>
+                <h5 class="mb-4">{{workshop.name}}</h5>
+                <div class="mb-4">
+                    <span class="card-text d-block"
+                        ><glx-icon name="Calendar"></glx-icon> Dia {{workshop.date | date:'dd/MM/yyyy'}}</span
+                    >
+                    <span class="card-text d-block"><glx-icon name="Alarm"></glx-icon> Hora {{workshop.time}} hrs</span>
+                    <span class="card-text d-block"
+                        ><glx-icon name="Person"></glx-icon> Instructor {{workshop.instructor.name}}</span
+                    >
+                </div>
+                <glx-button color="primary" [routerLink]="['/taller',workshop.slug]"> Informacion </glx-button>
+            </glx-card-boby>
+        </glx-card>
+    </div>
+</div>
